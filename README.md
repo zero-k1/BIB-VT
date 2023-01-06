@@ -27,7 +27,7 @@ You can also omit this step, but you will need to adapt the ``datasets.py`` file
   
 ``python preprocess.py vid path/to/input/folder path/to/output/folder``, e.g.  
   
-``python preprocess.py vid /Downloads/bib-training/multi_agent train``  
+``python preprocess.py vid multi_agent train``  
   
 Train, test, val, and eval sets need to be preprocessed separately for each task! 
   
