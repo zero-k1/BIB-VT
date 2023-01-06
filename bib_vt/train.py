@@ -30,7 +30,7 @@ def init_dataloaders():
     return dataloader_train, dataloader_val
 
 def val_step(model, best_valid_loss, dataloader_val, mse, bce, weighting):
-    val_loss = eval(model, dataloader_val, mse, bce, weighting)
+    val_loss = eval(model, dataloader_val, bce, mse, weighting)
     print(val_loss)
     if val_loss < best_valid_loss:
         print("Saving!")
